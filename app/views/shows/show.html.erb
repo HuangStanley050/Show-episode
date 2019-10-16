@@ -14,3 +14,21 @@
   </strong>
   <%= @show.id %>
 </p>
+<%= form_with local: true do |form| %>
+<h1>Create Episode for this show</h1>
+<p>
+  <%= form.label :title %><br>
+  <%= form.text_field :title %>
+</p>
+<p>
+  <%= form.label :notes %><br>
+  <%= form.text_area :notes %>
+</p>
+<p>
+  <%= form.label :map3_file%><br/>
+  <%= form.text_field :map3_file %>
+</p>
+<p>
+  <%= form.submit %>
+</p>
+<% end %>
