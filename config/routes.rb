@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'shows/edit'
   get 'shows/update'
   get 'shows/delete'
+  resources :shows
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

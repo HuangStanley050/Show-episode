@@ -6,11 +6,15 @@ class ShowsController < ApplicationController
   def new; end
 
   def create
-    @show = Show.new(params[:show])
+    # render plain: params[:shows].inspect
+    @show = Show.new(shows_params)
     @show.save
   end
 
-  def show; end
+  def show
+    @show = Show.find(params[:id])
+    # p @show
+  end
 
   def edit; end
 
@@ -21,6 +25,6 @@ class ShowsController < ApplicationController
   private
 
   def shows_params
-    params.require(:article).permit(:name, :genre, :explicit_content)
+    params.require(:show).permit(:name, :genre, :explicit_content)
   end
 end

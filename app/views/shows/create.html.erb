@@ -1,6 +1,6 @@
 <h1>Create a Podcast/Show</h1>
 <p>Find me in app/views/shows/create.html.erb</p>
-<%= form_with scope: :shows, url:shows_create_path,local: true do |form| %>
+<%= form_with scope: :show, url:shows_create_path,local: true do |form| %>
 <p>
   <%= form.label :name %><br>
   <%= form.text_field :name %>
