@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'episodes/createe'
   get 'shows/index'
   get 'shows/new'
   get 'shows/create'
+  post 'shows/create'
   get 'shows/show'
   get 'shows/edit'
   get 'shows/update'
