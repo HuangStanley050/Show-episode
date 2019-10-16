@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'shows/new'
   get 'shows/create'
   post 'shows/create'
-
+  post 'shows/:id', to: 'episodes#create'
+  get 'shows/show'
   get 'shows/show'
   get 'shows/edit'
   get 'shows/update'

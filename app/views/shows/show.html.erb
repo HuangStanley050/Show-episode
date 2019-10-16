@@ -14,7 +14,7 @@
   </strong>
   <%= @show.id %>
 </p>
-<%= form_with local: true do |form| %>
+<%= form_for @episode, :url=>show_episode_index_path(@episode) do |form| %>
 <h1>Create Episode for this show</h1>
 <p>
   <%= form.label :title %><br>

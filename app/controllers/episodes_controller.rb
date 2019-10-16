@@ -1,7 +1,15 @@
 # frozen_string_literal: true
 
 class EpisodesController < ApplicationController
-  def create; end
+  def new; end
+
+  def index; end
+
+  def create
+    puts 'You have hit the episode controller'
+    @episode = shows_params
+    p @episode
+  end
 
   private
 
